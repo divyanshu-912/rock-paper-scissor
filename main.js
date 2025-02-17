@@ -24,7 +24,8 @@ const genCompChoice=()=>{
     return option[choiceIdx];
 }
 const draw=()=>{
-        document.getElementById("result-text").innerText="It's a draw"
+        document.getElementById("result-text").innerText="It's a draw";
+        document.getElementById("result-text").style.color = "white";
         // console.log("Its a draw");
 };
 const playGame = (userChoice) => {
@@ -44,11 +45,13 @@ const playGame = (userChoice) => {
         tMatches.innerHTML=parseInt(tMatches.innerHTML) + 1;
 
         document.getElementById("result-text").innerText = "Computer Wins";
+        document.getElementById("result-text").style.color = "red";
     }
     else if ((compChoice==="scissors" && userChoice==="rock")||(compChoice==="rock" && userChoice==="paper")||(compChoice==="paper" && userChoice==="scissors")){
         uScore.innerHTML =parseInt(uScore.innerHTML) + 1;
         tMatches.innerHTML=parseInt(tMatches.innerHTML) + 1;
         document.getElementById("result-text").innerText = "You wins";
+        document.getElementById("result-text").style.color = "green";
     }
     
     
