@@ -1,0 +1,56 @@
+<!--
+***********************************************************************Divyanshu Kannaujiya*******************************************************************************
+*************************************************************************MNNIT Allahabad***********************************************************************************
+This is a part of my Practice Project 
+
+--> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock-Paper-Scissor</title>
+</head>
+<body>
+  <div id="header">
+    <h1>Rock-Paper-Scissor</h1>
+    <div id="list">
+        <ul>
+            <li id="bg" onclick="bg_change()">BackgroundTheme</li>
+            <li>Your Matches</li>
+        </ul>
+    </div>
+
+  </div>  
+  <div id="game">
+        <div id="choices">
+            <img src="paper.png" alt="paper" id="paper" class="choice">
+            <img src="rock.png" alt="rock" id="rock" class="choice">
+            <img src="scissor.png" alt="scissors" id="scissors" class="choice">
+            
+            
+        </div>
+        <div id="win-loss">
+            <div id="you">
+                <p id="uwin">Your Win:<span id="uwin-score">0</span></p>
+                
+            </div>
+            <div id="comp">
+                <p id="cwin">Computer Win:<span id="cwin-score">0</span></p>
+               
+            </div> 
+            
+        </div>
+        <div id="match">
+            <p id="tMatch">Total Matches:<span id="tMatches">0</span></p>
+            
+        </div>
+        <div id="result"> 
+            <p id="result-text" onclick="draw()">To play the game select your Choice</p>
+        </div>
+  </div>
+  <Script src="main.js"></Script>
+</body>
+</html>

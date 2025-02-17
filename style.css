@@ -1,0 +1,86 @@
+/*
+***********************************************************************Divyanshu Kannaujiya*******************************************************************************
+*/
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #149ade;
+    text-align: center;
+}
+
+/* Header Styling */
+#header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+#header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#list ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+#list li {
+    background-color: #444;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#list li:hover {
+    background-color: #555;
+}
+
+/* Game Section */
+#game {
+    margin-top: 30px;
+}
+
+#choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#choices img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+#choices img:hover {
+    transform: scale(1.1);
+}
+
+/* Scoreboard */
+#win-loss {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+#tMatch{
+    font-weight: bold;
+}
+#result {
+    margin-top: 20px;
+    align-self: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #0a487b; 
+}
